@@ -370,6 +370,8 @@
     background: rgba(255, 255, 255, 0.1);
     opacity: 0;
     transition: opacity 0.3s;
+    pointer-events: none;
+    /* Fix tap issue on mobile */
 }
 
 /* Project Showcase (Video Replacement) */
@@ -534,22 +536,38 @@
     .project-showcase {
         aspect-ratio: auto;
         height: auto;
-        min-height: 550px;
-        /* Taller to fit stacked content */
+        min-height: auto;
+        /* Allow height to adapt */
         padding-bottom: 40px;
     }
 
     .showcase-wrapper {
         position: relative;
+        display: grid;
+        /* Use grid for stacking */
+        grid-template-areas: "slide";
     }
 
     .showcase-slide {
-        position: absolute;
+        position: relative;
+        /* Reset from absolute */
+        grid-area: slide;
+        /* Stack in same grid cell */
         padding: 20px;
         align-items: flex-start;
         /* Top align */
-        overflow-y: auto;
-        /* Allow scroll if needed */
+        overflow-y: visible;
+        /* Show full content */
+        height: auto;
+        /* Allow slide to grow */
+        pointer-events: none;
+        /* Interact only with active */
+    }
+
+    .showcase-slide.active {
+        opacity: 1;
+        z-index: 2;
+        pointer-events: auto;
     }
 
     .showcase-content {
@@ -561,16 +579,19 @@
     }
 
     .showcase-image-container {
-        height: 250px;
-        /* Fixed height for image area */
+        height: auto;
+        /* Adapts to image */
+        max-height: 300px;
+        /* Limit max height */
         width: 100%;
         transform: translateY(10px);
         margin-bottom: 20px;
     }
 
     .showcase-image {
-        max-height: 100%;
+        max-height: 300px;
         width: auto;
+        max-width: 100%;
         object-fit: contain;
     }
 
