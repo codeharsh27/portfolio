@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oracle - Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../src/style.css">
+    <!-- Project Specific Styles -->
+    <link rel="stylesheet" href="../src/projects.css">
+</head>
+
+<body class="project-detail-body">
+    <div class="project-container">
+
+        <!-- Navigation -->
+        <nav class="project-nav">
+            <a href="/" class="back-btn">
+                <i data-lucide="arrow-left"></i> Back to Portfolio
+            </a>
+        </nav>
+
+        <!-- Hero Showcase -->
+        <div class="project-showcase">
+            <div class="showcase-wrapper">
+                <!-- Slide 1 -->
+                <div class="showcase-slide active">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/oracle/Screenshot_20260102_200548.jpg" alt="Dashboard"
+                                class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">Command Center</span>
+                            <h3>Complete Gym Overview</h3>
+                            <p>Manage members, track revenue, and oversee daily operations from a single dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="showcase-slide">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/oracle/Screenshot_20260102_200633.jpg" alt="Workouts"
+                                class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">Custom Plans</span>
+                            <h3>Detailed Workout Programming</h3>
+                            <p>Create and assign personalized workout routines to clients with video guides and
+                                tracking.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="showcase-slide">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/oracle/Screenshot_20260102_200609.jpg" alt="Diet" class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">Nutrition Tracking</span>
+                            <h3>Smart Diet Management</h3>
+                            <p>Monitor client nutrition with detailed macro breakdowns and meal planning tools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header & Meta -->
+        <header class="project-header">
+            <h1 class="project-title">Oracle / FitConnect</h1>
+            <p class="project-tagline">FitConnect SaaS - Your Complete Fitness Ecosystem.</p>
+
+            <div class="project-meta-grid">
+                <div class="meta-item">
+                    <h5>Role</h5>
+                    <p>Solo Developer</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Timeline</h5>
+                    <p>2024</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Architecture</h5>
+                    <p>SaaS / Event-Driven</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Platform</h5>
+                    <p>Mobile (User) & Web (Admin)</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="project-content">
+            <div class="content-left">
+                <div class="content-block">
+                    <h3>The Problem</h3>
+                    <p>
+                        Gym owners often struggle with disjointed software for managing members, billing, and trainers,
+                        leading to administrative chaos. On the flip side, users lack a cohesive platform to track
+                        workouts, diet, and progress while staying connected with their trainers.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h3>The Solution</h3>
+                    <p>
+                        FitConnect is a comprehensive <strong>SaaS Ecosystem</strong> that bridges the gap.
+                        It offers dedicated interfaces for Users (Fitness tracking), Trainers (Client Management),
+                        and Admins (Business Operations), all unified by a robust Firebase backend.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h3>Key Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-card">
+                            <h4><i data-lucide="smartphone" size="20" color="var(--accent-color)"></i> 3-in-1 Platform
+                            </h4>
+                            <p>Unified ecosystem for Users, Trainers, and Gym Admins.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="dumbbell" size="20" color="var(--accent-color)"></i> Workout & Diet</h4>
+                            <p>Personalized plans, video demos, and macro tracking.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="credit-card" size="20" color="var(--accent-color)"></i> Razorpay
+                                Integration</h4>
+                            <p>Automated billing, subscription management, and trainer payouts.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="users" size="20" color="var(--accent-color)"></i> Client Mgmt</h4>
+                            <p>Trainers can track client progress, schedule sessions, and chat in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block" style="margin-top: 60px;">
+                    <h3>SaaS Architecture</h3>
+                    <p>
+                        Built on <strong>Firebase</strong> for high scalability. It leverages <strong>Cloud
+                            Functions</strong> for
+                        event-driven logic (e.g., generating invoices on subscription renewal). The app follows a
+                        <strong>Provider</strong> based state management approach ensuring performance across complex
+                        dashboards.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sidebar / Extra Info -->
+            <div class="content-right">
+                <div class="content-block">
+                    <h3>Tools Used</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Flutter</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Firebase</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Razorpay</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">BlockState</span>
+                    </div>
+                </div>
+
+                <div class="content-block" style="margin-top: 40px;">
+                    <h3 style="font-size: 20px; margin-bottom: 20px;">Visual Interface</h3>
+                    <div class="gallery-grid" style="grid-template-columns: 1fr 1fr; gap: 15px; padding: 0;">
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/oracle/Screenshot_20260102_200548.jpg" alt="Login">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/oracle/Screenshot_20260102_200555.jpg" alt="Dashboard">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/oracle/Screenshot_20260102_200609.jpg" alt="Workout">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/oracle/Screenshot_20260102_200616.jpg" alt="Profile">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/oracle/Screenshot_20260102_200633.jpg" alt="Session">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/oracle/Screenshot_20260102_200654.jpg" alt="Chat">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer
+            style="margin-top: 100px; text-align: center; color: var(--text-secondary); padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.05);">
+            &copy; 2026 Harsh Mule. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="../src/project-detail.js"></script>
+</body>
+
+</html>

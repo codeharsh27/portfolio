@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devapp - Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../src/style.css">
+    <!-- Project Specific Styles -->
+    <link rel="stylesheet" href="../src/projects.css">
+</head>
+
+<body class="project-detail-body">
+    <div class="project-container">
+
+        <!-- Navigation -->
+        <nav class="project-nav">
+            <a href="/" class="back-btn">
+                <i data-lucide="arrow-left"></i> Back to Portfolio
+            </a>
+        </nav>
+
+        <!-- Hero Showcase -->
+        <div class="project-showcase">
+            <div class="showcase-wrapper">
+                <!-- Slide 1 -->
+                <div class="showcase-slide active">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/devapp/home_page.png" alt="Feed" class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">AI Curated Feed</span>
+                            <h3>Jobs matched perfectly to you</h3>
+                            <p>Stop scrolling through irrelevant listings. Our AI filters jobs based on your actual
+                                resume and skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="showcase-slide">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/devapp/explore_page.png" alt="Explore" class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">Semantic Search</span>
+                            <h3>Find roles by meaning, not keywords</h3>
+                            <p>Search effectively using natural language. "Remote jobs for Flutter beginners" actually
+                                works here.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="showcase-slide">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/devapp/profile_page.png" alt="Profile" class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">Skill Gap Analysis</span>
+                            <h3>Know what you're missing</h3>
+                            <p>We analyze job descriptions against your profile to show you exactly what skills to learn
+                                next.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header & Meta -->
+        <header class="project-header">
+            <h1 class="project-title">DevApp - AI Career Ecosystem</h1>
+            <p class="project-tagline">The AI-Powered Career Ecosystem for Developers.</p>
+
+            <div class="project-meta-grid">
+                <div class="meta-item">
+                    <h5>Role</h5>
+                    <p>Lead Engineer</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Timeline</h5>
+                    <p>Oct 2025 - Present</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Architecture</h5>
+                    <p>Clean Arch + SOLID</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Platform</h5>
+                    <p>Mobile (Offline First)</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="project-content">
+            <div class="content-left">
+                <div class="content-block">
+                    <h3>The Problem</h3>
+                    <p>
+                        Campus placements are often a "blind" process. Students apply to hundreds of companies without
+                        knowing if their resume actually matches the job description. Furthermore, skill gaps are often
+                        discovered too late, leading to high rejection rates.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h3>The Solution</h3>
+                    <p>
+                        DevApp bridges the gap using an offline-first mobile app. It features an <strong>AI Career
+                            Mentor</strong>
+                        for 24/7 guidance and a <strong>Skill Gap Analysis</strong> engine that scans user profiles
+                        against
+                        real market demands to recommend personalized learning paths.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h3>Key Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-card">
+                            <h4><i data-lucide="brain-circuit" size="20" color="var(--accent-color)"></i> AI Skill Gap
+                                Analysis</h4>
+                            <p>Instantly identifies missing skills compared to target job descriptions.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="file-check" size="20" color="var(--accent-color)"></i> Career
+                                Automation</h4>
+                            <p>Auto-Apply system that finds roles and tracks application status.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="wifi-off" size="20" color="var(--accent-color)"></i> Offline First
+                            </h4>
+                            <p>Built with Hive to allow learning and tracking without internet.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="zap" size="20" color="var(--accent-color)"></i> AI Resume Builder</h4>
+                            <p>Generates ATS-optimized resumes and portfolio sites instantly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block" style="margin-top: 60px;">
+                    <h3>AI Integration & Tech</h3>
+                    <p>
+                        The app follows <strong>Clean Architecture</strong>. The backend utilizes <strong>Firebase
+                            Cloud Functions</strong> and <strong>Local ML</strong> for intelligence. User data is
+                        secured
+                        with <strong>AES Encryption</strong> and stored locally in <strong>Hive</strong> boxes, ensuring
+                        fast access and privacy.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sidebar / Extra Info -->
+            <div class="content-right">
+                <div class="content-block">
+                    <h3>Tools Used</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Flutter</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Firebase</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Hive</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Riverpod</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Clean
+                            Architecture</span>
+                    </div>
+                </div>
+
+                <div class="content-block" style="margin-top: 40px;">
+                    <h3 style="font-size: 20px; margin-bottom: 20px;">Visual Interface</h3>
+                    <div class="gallery-grid" style="grid-template-columns: 1fr 1fr; gap: 15px; padding: 0;">
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/devapp/home_page.png" alt="Home">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/devapp/explore_page.png" alt="Explore">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/devapp/profile_page.png" alt="Profile">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/devapp/application_page.png" alt="Applications">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/devapp/resume_builder_landing.png" alt="Resume Builder">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/devapp/resume_built.png" alt="Resume">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/devapp/template_selection.png" alt="Templates">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/devapp/info_collection_for_resume.png" alt="Info">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block" style="margin-top: 40px;">
+                    <h3>Outcome</h3>
+                    <p>
+                        Aiming for a Play Store launch in Q1 2026. Currently testing with a closed group of CS students
+                        to refine the matching algorithm.
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer
+            style="margin-top: 100px; text-align: center; color: var(--text-secondary); padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.05);">
+            &copy; 2026 Harsh Mule. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="../src/project-detail.js"></script>
+</body>
+
+</html>

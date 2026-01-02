@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muscle Money - Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../src/style.css">
+    <!-- Project Specific Styles -->
+    <link rel="stylesheet" href="../src/projects.css">
+</head>
+
+<body class="project-detail-body">
+    <div class="project-container">
+
+        <!-- Navigation -->
+        <nav class="project-nav">
+            <a href="/" class="back-btn">
+                <i data-lucide="arrow-left"></i> Back to Portfolio
+            </a>
+        </nav>
+
+        <!-- Hero Showcase -->
+        <div class="project-showcase">
+            <div class="showcase-wrapper">
+                <!-- Slide 1 -->
+                <div class="showcase-slide active">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/muscle%20money/Screenshot_20260102_200710.jpg" alt="Home"
+                                class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">Financial Health</span>
+                            <h3>Your net worth at a glance</h3>
+                            <p>Track your daily savings and visualize your wealth growth with our intuitive dashboard.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="showcase-slide">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/muscle%20money/Screenshot_20260102_200756.jpg" alt="Simulator"
+                                class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">Market Simulator</span>
+                            <h3>Trade without the risk</h3>
+                            <p>Practice trading stocks and gold with ₹1,00,000 dummy money in a real-time market
+                                environment.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="showcase-slide">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/muscle%20money/Screenshot_20260102_200714.jpg" alt="Learning"
+                                class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">AI Tutor</span>
+                            <h3>Learn finance the fun way</h3>
+                            <p>Master complex financial concepts through bite-sized, gamified daily lessons.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header & Meta -->
+        <header class="project-header">
+            <h1 class="project-title">Muscle Money</h1>
+            <p class="project-tagline">Duolingo for Finance - Building Financial Muscles, One Habit at a Time.</p>
+
+            <div class="project-meta-grid">
+                <div class="meta-item">
+                    <h5>Role</h5>
+                    <p>Solo Developer</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Timeline</h5>
+                    <p>2024 (Beta)</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Architecture</h5>
+                    <p>Microservices</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Platform</h5>
+                    <p>Mobile (iOS/Android)</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="project-content">
+            <div class="content-left">
+                <div class="content-block">
+                    <h3>The Problem</h3>
+                    <p>
+                        73% of college students have no savings plan, and traditional finance education is often
+                        theoretical and boring.
+                        Students fear making costly investing mistakes and lack a safe environment to practice.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h3>The Solution</h3>
+                    <p>
+                        Muscle Money gamifies financial literacy with a "Learn by Doing" philosophy. It combines
+                        <strong>Smart Auto-Save</strong>
+                        (automated micro-savings) with a <strong>Risk-Free Simulator</strong> for trading stocks and
+                        gold.
+                        By integrating <strong>AI-Powered Learning</strong>, it transforms complex financial concepts
+                        into
+                        bite-sized, addictive daily lessons.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h3>Key Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-card">
+                            <h4><i data-lucide="piggy-bank" size="20" color="var(--accent-color)"></i> Smart Auto-Save
+                            </h4>
+                            <p>Automatically deducts a % of spendings and saves it via PhonePe integration.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="gamepad-2" size="20" color="var(--accent-color)"></i> Market Simulator
+                            </h4>
+                            <p>Trade stocks & gold with ₹1L dummy money using real-time market data.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="brain-circuit" size="20" color="var(--accent-color)"></i> AI Tutor</h4>
+                            <p>Personalized learning paths with quizzes adapted to your financial goals.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="trophy" size="20" color="var(--accent-color)"></i> Gamification</h4>
+                            <p>Daily streaks, badges, and rewards to build consistent financial habits.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block" style="margin-top: 60px;">
+                    <h3>System Architecture</h3>
+                    <p>
+                        The platform is built on a <strong>Microservices Architecture</strong> to ensure scalability.
+                        The <strong>API Gateway</strong> orchestrates traffic between the User, Learning, and Finance
+                        services.
+                        <strong>Redis</strong> is used for caching session data and real-time market tickers, while
+                        <strong>PostgreSQL</strong> handles transactional integrity.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sidebar / Extra Info -->
+            <div class="content-right">
+                <div class="content-block">
+                    <h3>Tools Used</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Flutter</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Node.js</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">PostgreSQL</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Redis</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">PhonePe
+                            API</span>
+                    </div>
+                </div>
+
+                <div class="content-block" style="margin-top: 40px;">
+                    <h3 style="font-size: 20px; margin-bottom: 20px;">Visual Interface</h3>
+                    <div class="gallery-grid" style="grid-template-columns: 1fr 1fr; gap: 15px; padding: 0;">
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/muscle%20money/Screenshot_20260102_200710.jpg" alt="Home">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/muscle%20money/Screenshot_20260102_200714.jpg" alt="Learning">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/muscle%20money/Screenshot_20260102_200756.jpg" alt="Simulator">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/muscle%20money/Screenshot_20260102_200805.jpg" alt="Investments">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/muscle%20money/Screenshot_20260102_200813.jpg" alt="Profile">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/muscle%20money/Screenshot_20260102_200817.jpg" alt="Rewards">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer
+            style="margin-top: 100px; text-align: center; color: var(--text-secondary); padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.05);">
+            &copy; 2026 Harsh Mule. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="../src/project-detail.js"></script>
+</body>
+
+</html>

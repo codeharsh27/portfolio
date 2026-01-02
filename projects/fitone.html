@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitOne - Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../src/style.css">
+    <!-- Project Specific Styles -->
+    <link rel="stylesheet" href="../src/projects.css">
+</head>
+
+<body class="project-detail-body">
+    <div class="project-container">
+
+        <!-- Navigation -->
+        <nav class="project-nav">
+            <a href="/" class="back-btn">
+                <i data-lucide="arrow-left"></i> Back to Portfolio
+            </a>
+        </nav>
+
+        <!-- Hero Showcase -->
+        <div class="project-showcase">
+            <div class="showcase-wrapper">
+                <!-- Slide 1 -->
+                <div class="showcase-slide active">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/fitone/dashboard.jpg" alt="Dashboard" class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">Real-time Metrics</span>
+                            <h3>Track your active calories instantly</h3>
+                            <p>Get a comprehensive view of your daily activity, heart rate, and steps directly from the
+                                home dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="showcase-slide">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/fitone/tracker.jpg" alt="Tracker" class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">Precision Logging</span>
+                            <h3>Log every set and rep with ease</h3>
+                            <p>Our intuitive tracker lets you record your lifts quickly so you can focus on your form,
+                                not your phone.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="showcase-slide">
+                    <div class="showcase-content">
+                        <div class="showcase-image-container">
+                            <img src="/assets/fitone/stats.jpg" alt="Stats" class="showcase-image">
+                        </div>
+                        <div class="showcase-text">
+                            <span class="showcase-badge">Visual Progress</span>
+                            <h3>See your gains over time</h3>
+                            <p>Analyze your workout history with beautiful charts that help you stay motivated and
+                                consistent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header & Meta -->
+        <header class="project-header">
+            <h1 class="project-title">FitOne</h1>
+            <p class="project-tagline">A high-performance, local-first fitness tracking application.</p>
+
+            <div class="project-meta-grid">
+                <div class="meta-item">
+                    <h5>Role</h5>
+                    <p>Lead Engineer</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Timeline</h5>
+                    <p>2024</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Architecture</h5>
+                    <p>Clean Arch + BLoC</p>
+                </div>
+                <div class="meta-item">
+                    <h5>Platform</h5>
+                    <p>Mobile (iOS/Android)</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="project-content">
+            <div class="content-left">
+                <div class="content-block">
+                    <h3>The Problem</h3>
+                    <p>
+                        Fitness enthusiasts need a reliable way to track their progress regardless of connectivity.
+                        Many modern apps rely heavily on cloud synchronization, causing latency and usability issues
+                        in gyms with poor signal.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h3>The Solution</h3>
+                    <p>
+                        FitOne is engineered with a "Local-First" philosophy. By utilizing <strong>Hive</strong> for
+                        high-speed local storage,
+                        the app ensures zero-latency interactions. It implements <strong>Clean Architecture</strong> to
+                        strictly decouple
+                        business logic from UI code, ensuring scalability and testability.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h3>Key Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-card">
+                            <h4><i data-lucide="wifi-off" size="20" color="var(--accent-color)"></i> Offline-First</h4>
+                            <p>Seamlessly works without internet using Hive for local data persistence.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="layers" size="20" color="var(--accent-color)"></i> Clean Architecture
+                            </h4>
+                            <p>Scalable codebase separated into Domain, Data, and Presentation layers.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="cpu" size="20" color="var(--accent-color)"></i> Advanced State</h4>
+                            <p>Predictable state management implementing the BLoC pattern.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h4><i data-lucide="shield" size="20" color="var(--accent-color)"></i> Secure Auth</h4>
+                            <p>Firebase Authentication integrated for robust user management.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="content-block" style="margin-top: 60px;">
+                    <h3>System Architecture</h3>
+                    <p>
+                        The app follows a strict <strong>Clean Architecture</strong> pattern to ensure separation of
+                        concerns. The <strong>Presentation Layer</strong> uses BLoC for predictable state management,
+                        communicating with the <strong>Domain Layer</strong> via UseCases. The <strong>Data
+                            Layer</strong> handles the offline-first logic, creating a Repository implementation that
+                        switches between Hive (Local) and Firestore (Remote) based on connectivity status, ensuring 100%
+                        uptime for the user.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sidebar / Extra Info -->
+            <div class="content-right">
+                <div class="content-block">
+                    <h3>Tools Used</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Flutter</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Hive</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">BLoC</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">GoRouter</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">GetIt</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 20px; font-size: 14px;">Firebase
+                            Auth</span>
+                    </div>
+                </div>
+
+                <div class="content-block" style="margin-top: 40px;">
+                    <h3 style="font-size: 20px; margin-bottom: 20px;">Visual Interface</h3>
+                    <div class="gallery-grid" style="grid-template-columns: 1fr 1fr; gap: 15px; padding: 0;">
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/fitone/dashboard.jpg" alt="Dashboard">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/fitone/tracker.jpg" alt="Tracker">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/fitone/workout.jpg" alt="Workout">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/fitone/calender.jpg" alt="Calendar">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/fitone/stats.jpg" alt="Stats">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/fitone/dashboard02.jpg" alt="Dashboard 2">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/fitone/explore.jpg" alt="Explore">
+                        </div>
+                        <div class="gallery-item" style="aspect-ratio: 9/16; min-height: 0;">
+                            <img src="/assets/fitone/profile.jpg" alt="Profile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer
+            style="margin-top: 100px; text-align: center; color: var(--text-secondary); padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.05);">
+            &copy; 2026 Harsh Mule. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="../src/project-detail.js"></script>
+</body>
+
+</html>
