@@ -364,8 +364,8 @@ body {
   font-weight: 900;
   line-height: 0.9;
   text-transform: uppercase;
-  color: #222;
-  /* Very dark gray */
+  color: #333;
+  /* Slightly lighter gray for better visibility */
   margin-top: -10px;
   letter-spacing: -2px;
   z-index: 0;
